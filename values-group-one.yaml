@@ -12,6 +12,7 @@ clusterGroup:
     - config-demo
     - hello-world
     - golang-external-secrets
+    - openshift-pipelines
 
   subscriptions:
 
@@ -19,6 +20,7 @@ clusterGroup:
     - eso
     - config-demo
     - hello-world
+    - openshift-pipelines
 
   applications:
     golang-external-secrets:
@@ -38,6 +40,12 @@ clusterGroup:
       namespace: hello-world
       project: hello-world
       path: charts/all/hello-world
+
+    openshift-pipelines:
+      name: openshift-pipelines
+      namespace: openshift-pipelines
+      project: openshift-pipelines
+      path: charts/region/region-one/openshift-pipelines
 
   # imperative:
   #   # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm

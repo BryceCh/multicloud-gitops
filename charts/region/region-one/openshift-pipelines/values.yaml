@@ -1,0 +1,15 @@
+---
+secretStore:
+  name: vault-backend
+  kind: ClusterSecretStore
+
+cosignsecret:
+  key: secret/data/global/cosign
+
+global:
+  hubClusterDomain: hub.example.com
+  localClusterDomain: region-one.example.com
+
+clusterGroup:
+  name: region-one
+  isHubCluster: false
