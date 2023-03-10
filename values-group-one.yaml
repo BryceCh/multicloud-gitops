@@ -12,7 +12,6 @@ clusterGroup:
     - config-demo
     - hello-world
     - golang-external-secrets
-    - openshift-pipelines
 
   subscriptions:
 
