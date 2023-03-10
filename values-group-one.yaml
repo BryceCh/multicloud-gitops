@@ -14,6 +14,12 @@ clusterGroup:
     - golang-external-secrets
 
   subscriptions:
+      - name: web-terminal
+        namespace: openshift-operators
+        channel: fast
+      - name: compliance-operator
+        namespace: openshift-compliance
+        channel: release-0.1
 
   projects:
     - eso
