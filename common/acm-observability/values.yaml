@@ -5,7 +5,7 @@ secretStore:
 
 # Secret to set S3 bucket for metric storage
 observabilityStorage:
-  key: secret/data/global/observabilityStorage
+  key: secret/data/hub/observabilityStorage
 
 pullSecret:
   key: secret/data/hub/openshiftPullSecret
