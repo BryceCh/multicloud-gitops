@@ -45,6 +45,12 @@ clusterGroup:
       project: hub
       path: common/golang-external-secrets
 
+    acm-observability:
+      name: acm-observability
+      project: hub
+      namespace: open-cluster-management-observability
+      path: common/acm-observability
+
     config-demo:
       name: config-demo
       namespace: config-demo

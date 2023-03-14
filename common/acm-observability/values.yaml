@@ -1,0 +1,18 @@
+---
+secretStore:
+  name: vault-backend
+  kind: ClusterSecretStore
+
+# Secret to set S3 bucket for metric storage
+observabilityStorage:
+  key: secret/data/global/observabilityStorage
+
+pullSecret:
+  key: secret/data/hub/openshiftPullSecret
+
+global:
+  hubClusterDomain: hub.example.com
+  localClusterDomain: region-one.example.com
+
+clusterGroup:
+  isHubCluster: true
